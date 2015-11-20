@@ -43,9 +43,9 @@ dd = get_word_count2('news.txt')
 for key in dd:
     print "key, value: ", key, dd[key]
 
-print dd.items()  # gives back tuples
-print dd.keys()
-print dd.values()
+print "list of tuples: ", dd.items()  # gives back tuples
+print "list of keys: ", dd.keys()
+print "list of values: ", dd.values()
 
 
 bigword = 0
@@ -60,3 +60,4 @@ print "Most common word is: ", bigword, "at", bigcount, "times"
 
 stuff = dict()
 print stuff.get('candy', -1)
+
