@@ -9,3 +9,5 @@ for line in handler:
         for num in nums:
             count.append(int(num))
 print sum(count)
+
+
