@@ -4,7 +4,9 @@ from BeautifulSoup import *
 sample_data = "http://python-data.dr-chuck.net/comments_42.html"
 actual_data = "http://python-data.dr-chuck.net/comments_183052.html"
 
-html = urllib.urlopen(actual_data).read()
+url = raw_input('Enter - ')
+html = urllib.urlopen(url).read()
+
 
 soup = BeautifulSoup(html)
 
@@ -14,4 +16,4 @@ count = []
 for tag in tags:
     count.append(int(tag.contents[0]))
 
-print sum(count)
+print "Sum: ", sum(count)
