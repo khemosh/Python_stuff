@@ -19,7 +19,7 @@ for count in counts:
 print "Count: ", len(counts)
 print "Sum: ", total
 
-# makeing some more changes
+# makeing some  changes
 
 
 
